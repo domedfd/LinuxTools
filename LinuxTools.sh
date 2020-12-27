@@ -123,6 +123,30 @@ echo -e "\033[1;32m  [+]\033[0m Exiftool OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando OpenVPN "
+echo ""
+sudo apt-get install openvpn -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m OpenVPN OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando Htop "
+echo ""
+sudo apt-get install htop -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Htop OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando neofetch "
+echo ""
+sudo apt-get install neofetch -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m neofetch OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando linpeas.sh"
 echo
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
