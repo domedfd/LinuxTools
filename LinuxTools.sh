@@ -187,3 +187,14 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m GoBuster OK!"
 echo ""
 
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando ffuf"
+echo ""
+wget https://github.com/ffuf/ffuf/releases/download/v1.1.0/ffuf_1.1.0_linux_amd64.tar.gz
+mkdir ffufFolder
+tar -vzxf ffuf_1.1.0_linux_amd64.tar.gz -C ffufFolder
+cp ffufFolder/ffuf $tools/Tools
+rm -rf ffuf_1.1.0_linux_amd64.tar.gz ffufFolder 
+echo ""
+echo -e "\033[1;32m  [+]\033[0m ffuf OK!"
+echo ""
