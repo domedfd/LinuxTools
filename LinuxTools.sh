@@ -209,3 +209,14 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m winPEASx64 OK!"
 echo ""
 
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando enum4linux"
+echo ""
+wget https://raw.githubusercontent.com/CiscoCXSecurity/enum4linux/master/enum4linux.pl
+chmod +x enum4linux.pl
+cp enum4linux.pl $tools/Tools
+rm -rf enum4linux.pl
+echo ""
+echo -e "\033[1;32m  [+]\033[0m enum4linux OK!"
+echo ""
+
