@@ -200,12 +200,12 @@ echo -e "\033[1;32m  [+]\033[0m ffuf OK!"
 echo ""
 
 echo ""
-echo -e "\033[1;32m  [+]\033[0m Baixando LinEnum.sh"
+echo -e "\033[1;32m  [+]\033[0m Baixando winPEASx64"
 echo ""
-wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
-cp LinEnum.sh $tools/Tools
-rm -rf LinEnum.sh
+wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/winPEAS/winPEASexe/winPEAS/bin/Obfuscated%20Releases/winPEASx64.exe
+cp winPEASx64.exe $tools/Tools
+rm -rf winPEASx64.exe
 echo ""
-echo -e "\033[1;32m  [+]\033[0m LinEnum.sh OK!"
+echo -e "\033[1;32m  [+]\033[0m winPEASx64 OK!"
 echo ""
 
