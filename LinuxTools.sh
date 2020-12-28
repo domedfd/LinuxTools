@@ -199,3 +199,13 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m ffuf OK!"
 echo ""
 
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando LinEnum.sh"
+echo ""
+wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+cp LinEnum.sh $tools/Tools
+rm -rf LinEnum.sh
+echo ""
+echo -e "\033[1;32m  [+]\033[0m LinEnum.sh OK!"
+echo ""
+
