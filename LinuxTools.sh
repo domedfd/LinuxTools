@@ -198,3 +198,4 @@ rm -rf ffuf_1.1.0_linux_amd64.tar.gz ffufFolder
 echo ""
 echo -e "\033[1;32m  [+]\033[0m ffuf OK!"
 echo ""
+
