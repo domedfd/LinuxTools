@@ -147,6 +147,70 @@ echo -e "\033[1;32m  [+]\033[0m neofetch OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando locate"
+echo ""
+sudo apt-get install mlocate -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m locate OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando whatweb"
+echo ""
+sudo apt-get install whatweb -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m whatweb OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando wireshark"
+echo ""
+sudo apt-get install wireshark -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m wireshark OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando john"
+echo ""
+sudo apt-get install john -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m john OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando hashcat"
+echo ""
+sudo apt-get install hashcat -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m hashcat OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando nasm"
+echo ""
+sudo apt-get install nasm -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m nasm OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando gdb"
+echo ""
+sudo apt-get install gdb -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m gdb OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando edb-debugger"
+echo ""
+sudo apt-get install edb-debugger -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m edb-debugger OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando linpeas.sh"
 echo
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
