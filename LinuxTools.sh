@@ -69,7 +69,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando steghide"
 echo ""
-sudo apt install steghide -y
+sudo apt-get install steghide -y
 echo ""
 echo -e "\033[1;32m  [+]\033[0m steghide OK!"
 echo ""
@@ -208,6 +208,14 @@ echo ""
 sudo apt-get install edb-debugger -y
 echo ""
 echo -e "\033[1;32m  [+]\033[0m edb-debugger OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando cadaver"
+echo ""
+sudo apt-get install cadaver -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m cadaver OK!"
 echo ""
 
 echo ""
