@@ -219,6 +219,39 @@ echo -e "\033[1;32m  [+]\033[0m cadaver OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando git"
+echo ""
+sudo apt-get install git -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m git OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando mariadb-server"
+echo ""
+sudo apt-get install mariadb-server -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m mariadb-server OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando mariadb-client"
+echo ""
+sudo apt-get install mariadb-client -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m mariadb-client OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando WPScan"
+echo ""
+sudo apt-get install ruby ruby-dev
+sudo gem install wpscan
+echo ""
+echo -e "\033[1;32m  [+]\033[0m WPScan OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando linpeas.sh"
 echo
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
@@ -290,5 +323,21 @@ cp enum4linux.pl $tools/Tools
 rm -rf enum4linux.pl
 echo ""
 echo -e "\033[1;32m  [+]\033[0m enum4linux OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando DroidCam"
+echo ""
+cd /tmp/
+sudo wget https://files.dev47apps.net/linux/droidcam_1.7.1.zip -O droidcam_latest.zip
+unzip droidcam_latest.zip -d droidcam
+sudo rm -rf droidcam_latest.zip
+cd droidcam
+sudo ./install-client
+sudo ./install-video
+sudo apt-get install adb -y
+cd ~
+echo ""
+echo -e "\033[1;32m  [+]\033[0m DroidCam OK!"
 echo ""
 
