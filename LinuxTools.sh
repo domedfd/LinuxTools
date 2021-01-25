@@ -245,7 +245,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando WPScan"
 echo ""
-sudo apt-get install ruby ruby-dev
+sudo apt-get install ruby ruby-dev -y
 sudo gem install wpscan
 echo ""
 echo -e "\033[1;32m  [+]\033[0m WPScan OK!"
