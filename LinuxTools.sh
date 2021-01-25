@@ -14,6 +14,8 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m Criando $tools/Tools"
 echo ""
 mkdir $tools/Tools
+mkdir $tools/Tools/bin
+mkdir $tools/Tools/WindowsBinaries
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Pasta $tools/Tools OK!"
 echo ""
@@ -286,7 +288,7 @@ echo ""
 wget https://github.com/OJ/gobuster/releases/download/v3.1.0/gobuster-linux-amd64.7z
 7z x gobuster-linux-amd64.7z
 chmod +x gobuster-linux-amd64/gobuster
-cp gobuster-linux-amd64/gobuster $tools/Tools
+cp gobuster-linux-amd64/gobuster $tools/Tools/bin
 rm -rf gobuster-linux-amd64.7z gobuster-linux-amd64
 echo ""
 echo -e "\033[1;32m  [+]\033[0m GoBuster OK!"
@@ -298,7 +300,7 @@ echo ""
 wget https://github.com/ffuf/ffuf/releases/download/v1.1.0/ffuf_1.1.0_linux_amd64.tar.gz
 mkdir ffufFolder
 tar -vzxf ffuf_1.1.0_linux_amd64.tar.gz -C ffufFolder
-cp ffufFolder/ffuf $tools/Tools
+cp ffufFolder/ffuf $tools/Tools/bin
 rm -rf ffuf_1.1.0_linux_amd64.tar.gz ffufFolder 
 echo ""
 echo -e "\033[1;32m  [+]\033[0m ffuf OK!"
@@ -319,7 +321,7 @@ echo -e "\033[1;32m  [+]\033[0m Baixando enum4linux"
 echo ""
 wget https://raw.githubusercontent.com/CiscoCXSecurity/enum4linux/master/enum4linux.pl
 chmod +x enum4linux.pl
-cp enum4linux.pl $tools/Tools
+cp enum4linux.pl $tools/Tools/bin
 rm -rf enum4linux.pl
 echo ""
 echo -e "\033[1;32m  [+]\033[0m enum4linux OK!"
