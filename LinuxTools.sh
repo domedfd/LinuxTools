@@ -343,3 +343,82 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m DroidCam OK!"
 echo ""
 
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando exe2hex"
+echo ""
+wget https://gitlab.com/kalilinux/packages/exe2hexbat/-/raw/kali/master/exe2hex.py
+cp exe2hex.py $tools/Tools
+rm exe2hex.py
+echo ""
+echo -e "\033[1;32m  [+]\033[0m exe2hex OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando upx"
+echo ""
+wget https://github.com/upx/upx/releases/download/v3.96/upx-3.96-amd64_linux.tar.xz
+tar -xf upx-3.96-amd64_linux.tar.xz
+cp upx-3.96-amd64_linux/upx $tools/Tools/bin
+rm -rf upx-3.96-amd64_linux upx-3.96-amd64_linux.tar.xz
+echo ""
+echo -e "\033[1;32m  [+]\033[0m upx OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando nc.exe"
+echo ""
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/nc.exe
+cp nc.exe $tools/Tools/WindowsBinaries
+rm nc.exe
+echo ""
+echo -e "\033[1;32m  [+]\033[0m nc.exe OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando plink.exe"
+echo ""
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/plink.exe
+cp plink.exe $tools/Tools/WindowsBinaries
+rm plink.exe
+echo ""
+echo -e "\033[1;32m  [+]\033[0m plink.exe OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando wget.exe"
+echo ""
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/wget.exe
+cp wget.exe $tools/Tools/WindowsBinaries
+rm wget.exe
+echo ""
+echo -e "\033[1;32m  [+]\033[0m wget.exe OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando whoami.exe"
+echo ""
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/whoami.exe
+cp whoami.exe $tools/Tools/WindowsBinaries
+rm whoami.exe
+echo ""
+echo -e "\033[1;32m  [+]\033[0m whoami.exe OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando exe2bat.exe"
+echo ""
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/exe2bat.exe
+cp exe2bat.exe $tools/Tools/WindowsBinaries
+rm exe2bat.exe
+echo ""
+echo -e "\033[1;32m  [+]\033[0m exe2bat.exe OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Adicionando $tools/Tools/bin no .bashrc"
+echo ""
+export PATH=$PATH:$tools/Tools/bin >> .bashrc
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Adicionado!"
+echo ""
+
