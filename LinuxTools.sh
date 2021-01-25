@@ -21,7 +21,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m sudo apt-get update "
 echo ""
-sudo apt-get update
+sudo apt-get update -y
 echo ""
 echo -e "\033[1;32m  [+]\033[0m sudo apt-get update OK!"
 echo ""
@@ -29,7 +29,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m sudo apt-get upgrade "
 echo ""
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 echo ""
 echo -e "\033[1;32m  [+]\033[0m sudo apt-get upgrade OK!"
 echo ""
