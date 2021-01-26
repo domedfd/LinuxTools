@@ -415,10 +415,6 @@ echo -e "\033[1;32m  [+]\033[0m exe2bat.exe OK!"
 echo ""
 
 echo ""
-echo -e "\033[1;32m  [+]\033[0m Adicionando $tools/Tools/bin no .bashrc"
-echo ""
-echo "export PATH=$PATH:$tools/Tools/bin" >> .bashrc
-echo ""
-echo -e "\033[1;32m  [+]\033[0m Adicionado!"
+echo -e "\033[1;31m  [-]\033[0m Adicionar /home/$(whoami)/$tools/Tools/bin em /etc/environment"
 echo ""
 
