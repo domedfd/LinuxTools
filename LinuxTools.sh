@@ -415,9 +415,10 @@ echo -e "\033[1;32m  [+]\033[0m exe2bat.exe OK!"
 echo ""
 
 echo ""
-echo -e "\033[1;32m  [+]\033[0m Adicionando $tools/Tools/bin no .bashrc"
+echo -e "\033[1;32m  [+]\033[0m Adicionando $tools/Tools/bin no /etc/environment"
 echo ""
-export PATH=$PATH:$tools/Tools/bin >> .bashrc
+dupla='"'
+sed -r "s/.$/:\/$tools\/Tools\/bin$dupla/g" /etc/environment > /etc/environment
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Adicionado!"
 echo ""
