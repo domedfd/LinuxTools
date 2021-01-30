@@ -15,7 +15,7 @@ echo -e "\033[1;32m  [+]\033[0m Criando $tools/Tools"
 echo ""
 mkdir $tools/Tools
 mkdir $tools/Tools/bin
-mkdir $tools/Tools/WindowsBinaries
+mkdir $tools/Tools/binWindows
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Pasta $tools/Tools OK!"
 echo ""
@@ -368,7 +368,7 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando nc.exe"
 echo ""
 wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/nc.exe
-cp nc.exe $tools/Tools/WindowsBinaries
+cp nc.exe $tools/Tools/binWindows
 rm nc.exe
 echo ""
 echo -e "\033[1;32m  [+]\033[0m nc.exe OK!"
@@ -378,7 +378,7 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando plink.exe"
 echo ""
 wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/plink.exe
-cp plink.exe $tools/Tools/WindowsBinaries
+cp plink.exe $tools/Tools/binWindows
 rm plink.exe
 echo ""
 echo -e "\033[1;32m  [+]\033[0m plink.exe OK!"
@@ -388,7 +388,7 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando wget.exe"
 echo ""
 wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/wget.exe
-cp wget.exe $tools/Tools/WindowsBinaries
+cp wget.exe $tools/Tools/binWindows
 rm wget.exe
 echo ""
 echo -e "\033[1;32m  [+]\033[0m wget.exe OK!"
@@ -398,7 +398,7 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando whoami.exe"
 echo ""
 wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/whoami.exe
-cp whoami.exe $tools/Tools/WindowsBinaries
+cp whoami.exe $tools/Tools/binWindows
 rm whoami.exe
 echo ""
 echo -e "\033[1;32m  [+]\033[0m whoami.exe OK!"
@@ -408,7 +408,7 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando exe2bat.exe"
 echo ""
 wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/exe2bat.exe
-cp exe2bat.exe $tools/Tools/WindowsBinaries
+cp exe2bat.exe $tools/Tools/binWindows
 rm exe2bat.exe
 echo ""
 echo -e "\033[1;32m  [+]\033[0m exe2bat.exe OK!"
