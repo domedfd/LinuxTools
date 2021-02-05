@@ -434,6 +434,7 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando crackmapexec "
 echo ""
 wget https://github.com/byt3bl33d3r/CrackMapExec/releases/download/v5.1.1dev/cme-ubuntu-latest.4.zip
+unzip cme-ubuntu-latest.4.zip
 mv cme crackmapexec
 chmod +x crackmapexec
 cp crackmapexec $tools/Tools/bin
