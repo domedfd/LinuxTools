@@ -254,6 +254,22 @@ echo -e "\033[1;32m  [+]\033[0m WPScan OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando vinetto "
+echo ""
+sudo apt-get install vinetto -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m vinetto OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando sqlite3 "
+echo ""
+sudo apt-get install sqlite3 -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m sqlite3 OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando linpeas.sh"
 echo
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
@@ -412,6 +428,18 @@ cp exe2bat.exe $tools/Tools/binWindows
 rm exe2bat.exe
 echo ""
 echo -e "\033[1;32m  [+]\033[0m exe2bat.exe OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando crackmapexec "
+echo ""
+wget https://github.com/byt3bl33d3r/CrackMapExec/releases/download/v5.1.1dev/cme-ubuntu-latest.4.zip
+mv cme crackmapexec
+chmod +x crackmapexec
+cp crackmapexec $tools/Tools/bin
+rm -rf cme-ubuntu-latest.4.zip crackmapexec
+echo ""
+echo -e "\033[1;32m  [+]\033[0m crackmapexec OK!"
 echo ""
 
 echo ""
