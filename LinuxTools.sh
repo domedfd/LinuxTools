@@ -444,6 +444,18 @@ echo -e "\033[1;32m  [+]\033[0m crackmapexec OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando subfinder"
+echo ""
+wget https://github.com/projectdiscovery/subfinder/releases/download/v2.4.6/subfinder_2.4.6_linux_amd64.tar.gz
+mkdir subfinder
+tar -vzxf subfinder_2.4.6_linux_amd64.tar.gz -C subfinder
+cp subfinder/subfinder $tools/Tools/bin
+rm -rf subfinder_2.4.6_linux_amd64.tar.gz subfinder
+echo ""
+echo -e "\033[1;32m  [+]\033[0m subfinder OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;31m  [-]\033[0m Adicionar /home/$(whoami)/$tools/Tools/bin em /etc/environment"
 echo ""
 
