@@ -245,6 +245,15 @@ echo -e "\033[1;32m  [+]\033[0m mariadb-client OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Desativando mysql.service"
+echo ""
+sudo service mysql stop
+sudo systemctl disable mysql
+echo ""
+echo -e "\033[1;32m  [+]\033[0m mysql.service Desativado!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando WPScan"
 echo ""
 sudo apt-get install ruby ruby-dev -y
