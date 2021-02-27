@@ -94,6 +94,14 @@ echo -e "\033[1;32m  [+]\033[0m smbclient OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando smbmap "
+echo ""
+sudo apt-get install smbmap -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m smbmap OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando onesixtyone"
 echo ""
 sudo apt-get install onesixtyone -y
