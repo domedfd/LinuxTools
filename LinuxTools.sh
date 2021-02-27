@@ -16,6 +16,7 @@ echo ""
 mkdir $tools/Tools
 mkdir $tools/Tools/bin
 mkdir $tools/Tools/binWindows
+mkdir $tools/Tools/impacket
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Pasta $tools/Tools OK!"
 echo ""
@@ -392,7 +393,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando nc.exe"
 echo ""
-wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/nc.exe
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/raw/kali/master/nc.exe
 cp nc.exe $tools/Tools/binWindows
 rm nc.exe
 echo ""
@@ -402,7 +403,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando plink.exe"
 echo ""
-wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/plink.exe
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/raw/kali/master/plink.exe
 cp plink.exe $tools/Tools/binWindows
 rm plink.exe
 echo ""
@@ -412,7 +413,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando wget.exe"
 echo ""
-wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/wget.exe
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/raw/kali/master/wget.exe
 cp wget.exe $tools/Tools/binWindows
 rm wget.exe
 echo ""
@@ -422,7 +423,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando whoami.exe"
 echo ""
-wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/whoami.exe
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/raw/kali/master/whoami.exe
 cp whoami.exe $tools/Tools/binWindows
 rm whoami.exe
 echo ""
@@ -432,7 +433,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando exe2bat.exe"
 echo ""
-wget https://gitlab.com/kalilinux/packages/windows-binaries/-/blob/kali/master/exe2bat.exe
+wget https://gitlab.com/kalilinux/packages/windows-binaries/-/raw/kali/master/exe2bat.exe
 cp exe2bat.exe $tools/Tools/binWindows
 rm exe2bat.exe
 echo ""
@@ -462,6 +463,56 @@ cp subfinder/subfinder $tools/Tools/bin
 rm -rf subfinder_2.4.6_linux_amd64.tar.gz subfinder
 echo ""
 echo -e "\033[1;32m  [+]\033[0m subfinder OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando smbexec.py"
+echo ""
+wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/smbexec.py
+cp smbexec.py $tools/Tools/impacket
+rm smbexec.py
+echo ""
+echo -e "\033[1;32m  [+]\033[0m smbexec.py OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando psexec.py"
+echo ""
+wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/psexec.py
+cp psexec.py $tools/Tools/impacket
+rm psexec.py
+echo ""
+echo -e "\033[1;32m  [+]\033[0m psexec.py OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando wmiexec.py"
+echo ""
+wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/wmiexec.py
+cp wmiexec.py $tools/Tools/impacket
+rm wmiexec.py
+echo ""
+echo -e "\033[1;32m  [+]\033[0m wmiexec.py OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando dcomexec.py"
+echo ""
+wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/dcomexec.py
+cp dcomexec.py $tools/Tools/impacket
+rm dcomexec.py
+echo ""
+echo -e "\033[1;32m  [+]\033[0m dcomexec.py OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando atexec.py"
+echo ""
+wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/atexec.py
+cp atexec.py $tools/Tools/impacket
+rm atexec.py
+echo ""
+echo -e "\033[1;32m  [+]\033[0m atexec.py OK!"
 echo ""
 
 echo ""
