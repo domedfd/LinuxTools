@@ -102,6 +102,14 @@ echo -e "\033[1;32m  [+]\033[0m smbmap OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando nbtscan "
+echo ""
+sudo apt-get install nbtscan -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m nbtscan OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando onesixtyone"
 echo ""
 sudo apt-get install onesixtyone -y
