@@ -17,6 +17,7 @@ mkdir $tools/Tools
 mkdir $tools/Tools/bin
 mkdir $tools/Tools/binWindows
 mkdir $tools/Tools/impacket
+mkdir $tools/Tools/winPEAS
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Pasta $tools/Tools OK!"
 echo ""
@@ -349,13 +350,21 @@ echo -e "\033[1;32m  [+]\033[0m ffuf OK!"
 echo ""
 
 echo ""
-echo -e "\033[1;32m  [+]\033[0m Baixando winPEASx64"
+echo -e "\033[1;32m  [+]\033[0m Baixando winPEAS "
 echo ""
-wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/winPEAS/winPEASexe/winPEAS/bin/Obfuscated%20Releases/winPEASx64.exe
-cp winPEASx64.exe $tools/Tools
-rm -rf winPEASx64.exe
+wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/winPEAS/winPEASexe/binaries/x64/Release/winPEASx64.exe
+cp winPEASx64.exe $tools/Tools/winPEAS
+rm winPEASx64.exe
+
+wget https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/winPEAS/winPEASexe/binaries/x86/Release/winPEASx86.exe
+cp winPEASx86.exe $tools/Tools/winPEAS
+rm winPEASx86.exe
+
+wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASbat/winPEAS.bat
+cp winPEAS.bat $tools/Tools/winPEAS
+rm winPEAS.bat
 echo ""
-echo -e "\033[1;32m  [+]\033[0m winPEASx64 OK!"
+echo -e "\033[1;32m  [+]\033[0m winPEAS OK!"
 echo ""
 
 echo ""
