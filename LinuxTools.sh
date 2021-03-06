@@ -18,6 +18,7 @@ mkdir $tools/Tools/bin
 mkdir $tools/Tools/binWindows
 mkdir $tools/Tools/impacket
 mkdir $tools/Tools/winPEAS
+mkdir $tools/Tools/mimikatz
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Pasta $tools/Tools OK!"
 echo ""
@@ -538,6 +539,16 @@ cp atexec.py $tools/Tools/impacket
 rm atexec.py
 echo ""
 echo -e "\033[1;32m  [+]\033[0m atexec.py OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando mimikatz"
+echo ""
+wget https://github.com/gentilkiwi/mimikatz/releases/download/2.2.0-20200918-fix/mimikatz_trunk.zip
+unzip mimikatz_trunk.zip -d $tools/Tools/mimikatz
+rm mimikatz_trunk.zip
+echo ""
+echo -e "\033[1;32m  [+]\033[0m mimikatz OK!"
 echo ""
 
 echo ""
