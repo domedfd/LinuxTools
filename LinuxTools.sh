@@ -492,6 +492,43 @@ echo -e "\033[1;32m  [+]\033[0m subfinder OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando dnsx "
+echo ""
+wget https://github.com/projectdiscovery/dnsx/releases/download/v1.0.1/dnsx_1.0.1_linux_amd64.tar.gz
+mkdir dnsx
+tar -vzxf dnsx_1.0.1_linux_amd64.tar.gz -C dnsx
+cp dnsx/dnsx $tools/Tools/bin
+rm -rf dnsx dnsx_1.0.1_linux_amd64.tar.gz
+echo ""
+echo -e "\033[1;32m  [+]\033[0m dnsx OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando httpx "
+echo ""
+wget https://github.com/projectdiscovery/httpx/releases/download/v1.0.3/httpx_1.0.3_linux_amd64.tar.gz
+mkdir httpx
+tar -vzxf httpx_1.0.3_linux_amd64.tar.gz -C httpx
+cp httpx/httpx $tools/Tools/bin
+rm -rf httpx httpx_1.0.3_linux_amd64.tar.gz
+echo ""
+echo -e "\033[1;32m  [+]\033[0m httpx OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando naabu "
+echo ""
+wget https://github.com/projectdiscovery/naabu/releases/download/v2.0.3/naabu-linux-amd64.tar.gz
+mkdir naabu
+tar -vzxf naabu-linux-amd64.tar.gz -C naabu
+mv naabu/naabu-linux-amd64 naabu/naabu
+cp naabu/naabu $tools/Tools/bin
+rm -rf naabu naabu-linux-amd64.tar.gz
+echo ""
+echo -e "\033[1;32m  [+]\033[0m naabu OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando smbexec.py"
 echo ""
 wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/smbexec.py
