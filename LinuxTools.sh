@@ -529,6 +529,18 @@ echo -e "\033[1;32m  [+]\033[0m naabu OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando nuclei "
+echo ""
+wget https://github.com/projectdiscovery/nuclei/releases/download/v2.3.1/nuclei_2.3.1_linux_amd64.tar.gz
+mkdir nuclei
+tar -vzxf nuclei_2.3.1_linux_amd64.tar.gz -C nuclei
+cp nuclei/nuclei $tools/Tools/bin
+rm -rf nuclei nuclei_2.3.1_linux_amd64.tar.gz
+echo ""
+echo -e "\033[1;32m  [+]\033[0m nuclei OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando smbexec.py"
 echo ""
 wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/smbexec.py
