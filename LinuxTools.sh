@@ -19,6 +19,7 @@ mkdir $tools/Tools/binWindows
 mkdir $tools/Tools/impacket
 mkdir $tools/Tools/winPEAS
 mkdir $tools/Tools/mimikatz
+mkdir $tools/Tools/nuclei
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Pasta $tools/Tools OK!"
 echo ""
@@ -532,10 +533,13 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando nuclei "
 echo ""
 wget https://github.com/projectdiscovery/nuclei/releases/download/v2.3.1/nuclei_2.3.1_linux_amd64.tar.gz
+wget https://github.com/projectdiscovery/nuclei-templates/archive/v8.1.4.zip
 mkdir nuclei
 tar -vzxf nuclei_2.3.1_linux_amd64.tar.gz -C nuclei
 cp nuclei/nuclei $tools/Tools/bin
-rm -rf nuclei nuclei_2.3.1_linux_amd64.tar.gz
+unzip v8.1.4.zip
+cp -r nuclei-templates-8.1.4 $tools/Tools/nuclei
+rm -rf nuclei nuclei_2.3.1_linux_amd64.tar.gz v8.1.4.zip nuclei-templates-8.1.4
 echo ""
 echo -e "\033[1;32m  [+]\033[0m nuclei OK!"
 echo ""
