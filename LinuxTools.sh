@@ -545,6 +545,17 @@ echo -e "\033[1;32m  [+]\033[0m nuclei OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando aquatone"
+echo ""
+wget https://github.com/michenriksen/aquatone/releases/download/v1.7.0/aquatone_linux_amd64_1.7.0.zip
+unzip aquatone_linux_amd64_1.7.0.zip -d aquatone
+cp aquatone/aquatone $tools/Tools/bin
+rm -rf aquatone aquatone_linux_amd64_1.7.0.zip
+echo ""
+echo -e "\033[1;32m  [+]\033[0m aquatone OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando smbexec.py"
 echo ""
 wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/smbexec.py
