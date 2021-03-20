@@ -249,6 +249,14 @@ echo -e "\033[1;32m  [+]\033[0m git OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando awscli"
+echo ""
+sudo apt-get install awscli -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m awscli OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando mariadb-server"
 echo ""
 sudo apt-get install mariadb-server -y
@@ -553,6 +561,18 @@ cp aquatone/aquatone $tools/Tools/bin
 rm -rf aquatone aquatone_linux_amd64_1.7.0.zip
 echo ""
 echo -e "\033[1;32m  [+]\033[0m aquatone OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando gitleaks"
+echo ""
+wget https://github.com/zricethezav/gitleaks/releases/download/v7.3.0/gitleaks-linux-amd64
+mv gitleaks-linux-amd64 gitleaks
+chmod +x gitleaks
+cp gitleaks $tools/Tools/bin
+rm gitleaks
+echo ""
+echo -e "\033[1;32m  [+]\033[0m gitleaks OK!"
 echo ""
 
 echo ""
