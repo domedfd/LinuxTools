@@ -307,6 +307,14 @@ echo -e "\033[1;32m  [+]\033[0m sqlite3 OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando whois "
+echo ""
+sudo apt-get install whois -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m whois OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando linpeas.sh"
 echo
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
