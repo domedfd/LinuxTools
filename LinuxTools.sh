@@ -572,6 +572,18 @@ echo -e "\033[1;32m  [+]\033[0m aquatone OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando chaos-client"
+echo ""
+wget https://github.com/projectdiscovery/chaos-client/releases/download/v0.1.7/chaos-client_0.1.7_linux_amd64.tar.gz
+mkdir chaos
+tar -vzxf chaos-client_0.1.7_linux_amd64.tar.gz -C chaos
+cp chaos/chaos $tools/Tools/bin
+rm -rf chaos chaos-client_0.1.7_linux_amd64.tar.gz
+echo ""
+echo -e "\033[1;32m  [+]\033[0m chaos-client OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando gitleaks"
 echo ""
 wget https://github.com/zricethezav/gitleaks/releases/download/v7.3.0/gitleaks-linux-amd64
