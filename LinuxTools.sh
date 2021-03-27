@@ -656,6 +656,29 @@ echo -e "\033[1;32m  [+]\033[0m mimikatz OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando gitleaks "
+echo ""
+wget https://github.com/zricethezav/gitleaks/releases/download/v7.3.0/gitleaks-linux-amd64
+mv gitleaks-linux-amd64 gitleaks
+chmod +x gitleaks
+cp gitleaks $tools/Tools/bin
+rm gitleaks
+echo ""
+echo -e "\033[1;32m  [+]\033[0m gitleaks OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando amass "
+echo ""
+wget https://github.com/OWASP/Amass/releases/download/v3.11.11/amass_linux_amd64.zip
+unzip amass_linux_amd64.zip
+cp amass_linux_amd64/amass $tools/Tools/bin
+rm -rf amass_linux_amd64 amass_linux_amd64.zip
+echo ""
+echo -e "\033[1;32m  [+]\033[0m amass OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;31m  [-]\033[0m Adicionar /home/$(whoami)/$tools/Tools/bin em /etc/environment"
 echo ""
 
