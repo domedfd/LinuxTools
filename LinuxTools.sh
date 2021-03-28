@@ -679,6 +679,30 @@ echo -e "\033[1;32m  [+]\033[0m amass OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando gau"
+echo ""
+wget https://github.com/lc/gau/releases/download/v1.1.0/gau_1.1.0_linux_amd64.tar.gz
+tar -vzxf gau_1.1.0_linux_amd64.tar.gz
+cp gau $tools/Tools/bin
+rm gau LICENSE README.md gau_1.1.0_linux_amd64.tar.gz
+echo ""
+echo -e "\033[1;32m  [+]\033[0m gau OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando ssh2john.py"
+echo ""
+wget https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/run/ssh2john.py
+sed -i 's/\#!\/usr\/bin\/env python/\#!\/usr\/bin\/python3/g' ssh2john.py
+mv ssh2john.py ssh2john
+chmod +x ssh2john
+cp ssh2john $tools/Tools/bin
+rm ssh2john
+echo ""
+echo -e "\033[1;32m  [+]\033[0m ssh2john.py OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;31m  [-]\033[0m Adicionar /home/$(whoami)/$tools/Tools/bin em /etc/environment"
 echo ""
 
