@@ -584,18 +584,6 @@ echo -e "\033[1;32m  [+]\033[0m chaos-client OK!"
 echo ""
 
 echo ""
-echo -e "\033[1;32m  [+]\033[0m Baixando gitleaks"
-echo ""
-wget https://github.com/zricethezav/gitleaks/releases/download/v7.3.0/gitleaks-linux-amd64
-mv gitleaks-linux-amd64 gitleaks
-chmod +x gitleaks
-cp gitleaks $tools/Tools/bin
-rm gitleaks
-echo ""
-echo -e "\033[1;32m  [+]\033[0m gitleaks OK!"
-echo ""
-
-echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando smbexec.py"
 echo ""
 wget https://raw.githubusercontent.com/SecureAuthCorp/impacket/master/examples/smbexec.py
