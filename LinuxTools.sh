@@ -691,6 +691,18 @@ echo -e "\033[1;32m  [+]\033[0m ssh2john.py OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando wafw00f"
+echo ""
+wget https://github.com/EnableSecurity/wafw00f/archive/refs/tags/v2.1.0.zip
+unzip v2.1.0.zip
+sed -i 's/\#!\/usr\/bin\/env python/\#!\/usr\/bin\/python3/g' wafw00f-2.1.0/wafw00f/bin/wafw00f
+cp wafw00f-2.1.0/wafw00f/bin/wafw00f $tools/Tools/bin
+rm -rf v2.1.0.zip wafw00f-2.1.0
+echo ""
+echo -e "\033[1;32m  [+]\033[0m wafw00f OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;31m  [-]\033[0m Adicionar /home/$(whoami)/$tools/Tools/bin em /etc/environment"
 echo ""
 
