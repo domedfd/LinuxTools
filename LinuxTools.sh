@@ -499,11 +499,11 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando subfinder"
 echo ""
-wget https://github.com/projectdiscovery/subfinder/releases/download/v2.4.6/subfinder_2.4.6_linux_amd64.tar.gz
+wget https://github.com/projectdiscovery/subfinder/releases/download/v2.4.7/subfinder_2.4.7_linux_amd64.tar.gz
 mkdir subfinder
-tar -vzxf subfinder_2.4.6_linux_amd64.tar.gz -C subfinder
+tar -vzxf subfinder_2.4.7_linux_amd64.tar.gz -C subfinder
 cp subfinder/subfinder $tools/Tools/bin
-rm -rf subfinder_2.4.6_linux_amd64.tar.gz subfinder
+rm -rf subfinder_2.4.7_linux_amd64.tar.gz subfinder
 echo ""
 echo -e "\033[1;32m  [+]\033[0m subfinder OK!"
 echo ""
