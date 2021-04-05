@@ -548,14 +548,14 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando nuclei "
 echo ""
-wget https://github.com/projectdiscovery/nuclei/releases/download/v2.3.4/nuclei_2.3.4_linux_amd64.tar.gz
+wget https://github.com/projectdiscovery/nuclei/releases/download/v2.3.3/nuclei_2.3.3_linux_amd64.tar.gz
 wget https://github.com/projectdiscovery/nuclei-templates/archive/refs/tags/v8.1.9.zip
 mkdir nuclei
-tar -vzxf nuclei_2.3.4_linux_amd64.tar.gz -C nuclei
+tar -vzxf nuclei_2.3.3_linux_amd64.tar.gz -C nuclei
 cp nuclei/nuclei $tools/Tools/bin
 unzip v8.1.9.zip
 cp -r nuclei-templates-8.1.9 $tools/Tools/nuclei
-rm -rf nuclei nuclei_2.3.4_linux_amd64.tar.gz v8.1.9.zip nuclei-templates-8.1.9
+rm -rf nuclei nuclei_2.3.3_linux_amd64.tar.gz v8.1.9.zip nuclei-templates-8.1.9
 echo ""
 echo -e "\033[1;32m  [+]\033[0m nuclei OK!"
 echo ""
