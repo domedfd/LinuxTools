@@ -523,11 +523,11 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando httpx "
 echo ""
-wget https://github.com/projectdiscovery/httpx/releases/download/v1.0.3/httpx_1.0.3_linux_amd64.tar.gz
+wget https://github.com/projectdiscovery/httpx/releases/download/v1.0.5/httpx_1.0.5_linux_amd64.tar.gz
 mkdir httpx
-tar -vzxf httpx_1.0.3_linux_amd64.tar.gz -C httpx
+tar -vzxf httpx_1.0.5_linux_amd64.tar.gz -C httpx
 cp httpx/httpx $tools/Tools/bin
-rm -rf httpx httpx_1.0.3_linux_amd64.tar.gz
+rm -rf httpx httpx_1.0.5_linux_amd64.tar.gz
 echo ""
 echo -e "\033[1;32m  [+]\033[0m httpx OK!"
 echo ""
