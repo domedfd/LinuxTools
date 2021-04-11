@@ -703,6 +703,17 @@ echo -e "\033[1;32m  [+]\033[0m wafw00f OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando kiterunner "
+echo ""
+wget https://github.com/assetnote/kiterunner/releases/download/v1.0.2/kiterunner_1.0.2_linux_amd64.tar.gz
+tar -vzxf kiterunner_1.0.2_linux_amd64.tar.gz
+cp kr $tools/Tools/bin
+rm kiterunner_1.0.2_linux_amd64.tar.gz kr
+echo ""
+echo -e "\033[1;32m  [+]\033[0m kiterunner OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;31m  [-]\033[0m Adicionar /home/$(whoami)/$tools/Tools/bin em /etc/environment"
 echo ""
 
