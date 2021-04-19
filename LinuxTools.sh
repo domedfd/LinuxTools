@@ -658,7 +658,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando amass "
 echo ""
-wget https://github.com/OWASP/Amass/releases/download/v3.11.11/amass_linux_amd64.zip
+wget https://github.com/OWASP/Amass/releases/download/v3.12.1/amass_linux_amd64.zip
 unzip amass_linux_amd64.zip
 cp amass_linux_amd64/amass $tools/Tools/bin
 rm -rf amass_linux_amd64 amass_linux_amd64.zip
@@ -711,6 +711,18 @@ cp kr $tools/Tools/bin
 rm kiterunner_1.0.2_linux_amd64.tar.gz kr
 echo ""
 echo -e "\033[1;32m  [+]\033[0m kiterunner OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando assetfinder "
+echo ""
+wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz
+tar -xvzf assetfinder-linux-amd64-0.1.1.tgz
+chmod +x assetfinder
+cp assetfinder $tools/Tools/bin
+rm assetfinder assetfinder-linux-amd64-0.1.1.tgz
+echo ""
+echo -e "\033[1;32m  [+]\033[0m assetfinder OK!"
 echo ""
 
 echo ""
