@@ -726,6 +726,18 @@ echo -e "\033[1;32m  [+]\033[0m assetfinder OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando findomain"
+echo ""
+wget https://github.com/Findomain/Findomain/releases/download/4.0.1/findomain-linux
+mv findomain-linux findomain
+chmod +x findomain
+cp findomain $tools/Tools/bin
+rm findomain
+echo ""
+echo -e "\033[1;32m  [+]\033[0m findomain OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;31m  [-]\033[0m Adicionar /home/$(whoami)/$tools/Tools/bin em /etc/environment"
 echo ""
 
