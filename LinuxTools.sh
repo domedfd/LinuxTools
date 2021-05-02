@@ -744,7 +744,7 @@ wget https://github.com/projectdiscovery/notify/releases/download/v0.0.2/notify_
 tar -xvzf notify_0.0.2_linux_amd64.tar.gz
 chmod +x notify
 cp notify $tools/Tools/bin
-rm notify LICENSE.md README.md
+rm notify LICENSE.md README.md notify_0.0.2_linux_amd64.tar.gz
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Notify OK!"
 echo ""
