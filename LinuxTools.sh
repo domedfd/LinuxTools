@@ -738,6 +738,18 @@ echo -e "\033[1;32m  [+]\033[0m findomain OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando Notify"
+echo ""
+wget https://github.com/projectdiscovery/notify/releases/download/v0.0.2/notify_0.0.2_linux_amd64.tar.gz
+tar -xvzf notify_0.0.2_linux_amd64.tar.gz
+chmod +x notify
+cp notify $tools/Tools/bin
+rm notify LICENSE.md README.md
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Notify OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;31m  [-]\033[0m Adicionar /home/$(whoami)/$tools/Tools/bin em /etc/environment"
 echo ""
 
