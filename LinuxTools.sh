@@ -20,6 +20,7 @@ mkdir $tools/Tools/impacket
 mkdir $tools/Tools/winPEAS
 mkdir $tools/Tools/mimikatz
 mkdir $tools/Tools/nuclei
+mkdir $tools/Tools/pathGO
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Pasta $tools/Tools OK!"
 echo ""
