@@ -324,6 +324,16 @@ echo -e "\033[1;32m  [+]\033[0m php7.4 OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando golang "
+echo ""
+mkdir 
+sudo apt-get install golang-go -y
+go env -w GOPATH=$HOME/$tools/Tools/pathGO
+echo ""
+echo -e "\033[1;32m  [+]\033[0m golang OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando linpeas.sh"
 echo
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
@@ -759,6 +769,7 @@ echo -e "\033[1;32m  [+]\033[0m Notify OK!"
 echo ""
 
 echo ""
-echo -e "\033[1;31m  [-]\033[0m Adicionar /home/$(whoami)/$tools/Tools/bin em /etc/environment"
+echo -e "\033[1;31m  [-]\033[0m Adicionar /$HOME/$tools/Tools/bin em /etc/environment"
+echo -e "\033[1;31m  [-]\033[0m Adicionar /$HOME/$tools/Tools/pathGO/bin em /etc/environment"
 echo ""
 
