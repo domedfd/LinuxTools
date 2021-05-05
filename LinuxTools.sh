@@ -315,6 +315,14 @@ echo -e "\033[1;32m  [+]\033[0m whois OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando php7.4 "
+echo ""
+sudo apt-get install php7.4-cli -y
+echo ""
+echo -e "\033[1;32m  [+]\033[0m php7.4 OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando linpeas.sh"
 echo
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
