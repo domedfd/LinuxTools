@@ -20,7 +20,6 @@ mkdir $tools/Tools/impacket
 mkdir $tools/Tools/winPEAS
 mkdir $tools/Tools/mimikatz
 mkdir $tools/Tools/nuclei
-mkdir $tools/Tools/pathGO
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Pasta $tools/Tools OK!"
 echo ""
@@ -326,8 +325,13 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando golang "
 echo ""
-sudo apt-get install golang-go -y
+wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
+tar -vzxf go1.16.4.linux-amd64.tar.gz
+mv go pathGO
+cp -r pathGO/ $tools/Tools
+export PATH=$PATH:$HOME/$tools/Tools/pathGO/bin
 go env -w GOPATH=$HOME/$tools/Tools/pathGO
+rm -rf go1.16.4.linux-amd64.tar.gz pathGO
 echo ""
 echo -e "\033[1;32m  [+]\033[0m golang OK!"
 echo ""
