@@ -326,7 +326,6 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando golang "
 echo ""
-mkdir 
 sudo apt-get install golang-go -y
 go env -w GOPATH=$HOME/$tools/Tools/pathGO
 echo ""
