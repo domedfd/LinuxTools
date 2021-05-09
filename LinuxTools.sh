@@ -377,11 +377,11 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando ffuf"
 echo ""
-wget https://github.com/ffuf/ffuf/releases/download/v1.1.0/ffuf_1.1.0_linux_amd64.tar.gz
+wget https://github.com/ffuf/ffuf/releases/download/v1.3.1/ffuf_1.3.1_linux_amd64.tar.gz
 mkdir ffufFolder
-tar -vzxf ffuf_1.1.0_linux_amd64.tar.gz -C ffufFolder
+tar -vzxf ffuf_1.3.1_linux_amd64.tar.gz -C ffufFolder
 cp ffufFolder/ffuf $tools/Tools/bin
-rm -rf ffuf_1.1.0_linux_amd64.tar.gz ffufFolder 
+rm -rf ffuf_1.3.1_linux_amd64.tar.gz ffufFolder 
 echo ""
 echo -e "\033[1;32m  [+]\033[0m ffuf OK!"
 echo ""
@@ -419,7 +419,7 @@ echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando DroidCam"
 echo ""
 cd /tmp/
-sudo wget https://files.dev47apps.net/linux/droidcam_1.7.1.zip -O droidcam_latest.zip
+sudo wget https://files.dev47apps.net/linux/droidcam_1.7.3.zip -O droidcam_latest.zip
 unzip droidcam_latest.zip -d droidcam
 sudo rm -rf droidcam_latest.zip
 cd droidcam
@@ -518,11 +518,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando subfinder"
 echo ""
-wget https://github.com/projectdiscovery/subfinder/releases/download/v2.4.7/subfinder_2.4.7_linux_amd64.tar.gz
-mkdir subfinder
-tar -vzxf subfinder_2.4.7_linux_amd64.tar.gz -C subfinder
-cp subfinder/subfinder $tools/Tools/bin
-rm -rf subfinder_2.4.7_linux_amd64.tar.gz subfinder
+GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
 echo ""
 echo -e "\033[1;32m  [+]\033[0m subfinder OK!"
 echo ""
@@ -530,11 +526,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando dnsx "
 echo ""
-wget https://github.com/projectdiscovery/dnsx/releases/download/v1.0.1/dnsx_1.0.1_linux_amd64.tar.gz
-mkdir dnsx
-tar -vzxf dnsx_1.0.1_linux_amd64.tar.gz -C dnsx
-cp dnsx/dnsx $tools/Tools/bin
-rm -rf dnsx dnsx_1.0.1_linux_amd64.tar.gz
+GO111MODULE=on go get -v github.com/projectdiscovery/dnsx/cmd/dnsx
 echo ""
 echo -e "\033[1;32m  [+]\033[0m dnsx OK!"
 echo ""
@@ -542,11 +534,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando httpx "
 echo ""
-wget https://github.com/projectdiscovery/httpx/releases/download/v1.0.5/httpx_1.0.5_linux_amd64.tar.gz
-mkdir httpx
-tar -vzxf httpx_1.0.5_linux_amd64.tar.gz -C httpx
-cp httpx/httpx $tools/Tools/bin
-rm -rf httpx httpx_1.0.5_linux_amd64.tar.gz
+GO111MODULE=on go get -v github.com/projectdiscovery/httpx/cmd/httpx
 echo ""
 echo -e "\033[1;32m  [+]\033[0m httpx OK!"
 echo ""
@@ -554,12 +542,8 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando naabu "
 echo ""
-wget https://github.com/projectdiscovery/naabu/releases/download/v2.0.3/naabu-linux-amd64.tar.gz
-mkdir naabu
-tar -vzxf naabu-linux-amd64.tar.gz -C naabu
-mv naabu/naabu-linux-amd64 naabu/naabu
-cp naabu/naabu $tools/Tools/bin
-rm -rf naabu naabu-linux-amd64.tar.gz
+sudo apt-get install libpcap-dev -y
+GO111MODULE=on go get -v github.com/projectdiscovery/naabu/v2/cmd/naabu
 echo ""
 echo -e "\033[1;32m  [+]\033[0m naabu OK!"
 echo ""
@@ -567,14 +551,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando nuclei "
 echo ""
-wget https://github.com/projectdiscovery/nuclei/releases/download/v2.3.3/nuclei_2.3.3_linux_amd64.tar.gz
-wget https://github.com/projectdiscovery/nuclei-templates/archive/refs/tags/v8.1.9.zip
-mkdir nuclei
-tar -vzxf nuclei_2.3.3_linux_amd64.tar.gz -C nuclei
-cp nuclei/nuclei $tools/Tools/bin
-unzip v8.1.9.zip
-cp -r nuclei-templates-8.1.9 $tools/Tools/nuclei
-rm -rf nuclei nuclei_2.3.3_linux_amd64.tar.gz v8.1.9.zip nuclei-templates-8.1.9
+GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 echo ""
 echo -e "\033[1;32m  [+]\033[0m nuclei OK!"
 echo ""
@@ -593,11 +570,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando chaos-client"
 echo ""
-wget https://github.com/projectdiscovery/chaos-client/releases/download/v0.1.7/chaos-client_0.1.7_linux_amd64.tar.gz
-mkdir chaos
-tar -vzxf chaos-client_0.1.7_linux_amd64.tar.gz -C chaos
-cp chaos/chaos $tools/Tools/bin
-rm -rf chaos chaos-client_0.1.7_linux_amd64.tar.gz
+GO111MODULE=on go get -v github.com/projectdiscovery/chaos-client/cmd/chaos
 echo ""
 echo -e "\033[1;32m  [+]\033[0m chaos-client OK!"
 echo ""
@@ -677,7 +650,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando amass "
 echo ""
-wget https://github.com/OWASP/Amass/releases/download/v3.12.1/amass_linux_amd64.zip
+wget https://github.com/OWASP/Amass/releases/download/v3.12.3/amass_linux_amd64.zip
 unzip amass_linux_amd64.zip
 cp amass_linux_amd64/amass $tools/Tools/bin
 rm -rf amass_linux_amd64 amass_linux_amd64.zip
@@ -715,8 +688,9 @@ echo ""
 wget https://github.com/EnableSecurity/wafw00f/archive/refs/tags/v2.1.0.zip
 unzip v2.1.0.zip
 sed -i 's/\#!\/usr\/bin\/env python/\#!\/usr\/bin\/python3/g' wafw00f-2.1.0/wafw00f/bin/wafw00f
-cp wafw00f-2.1.0/wafw00f/bin/wafw00f $tools/Tools/bin
-rm -rf v2.1.0.zip wafw00f-2.1.0
+mv wafw00f-2.1.0 wafw00f
+cp -r wafw00f/ $tools/Tools
+rm -rf v2.1.0.zip wafw00f
 echo ""
 echo -e "\033[1;32m  [+]\033[0m wafw00f OK!"
 echo ""
@@ -747,7 +721,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando findomain"
 echo ""
-wget https://github.com/Findomain/Findomain/releases/download/4.0.1/findomain-linux
+wget https://github.com/Findomain/Findomain/releases/download/4.1.1/findomain-linux
 mv findomain-linux findomain
 chmod +x findomain
 cp findomain $tools/Tools/bin
@@ -759,17 +733,16 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando Notify"
 echo ""
-wget https://github.com/projectdiscovery/notify/releases/download/v0.0.2/notify_0.0.2_linux_amd64.tar.gz
-tar -xvzf notify_0.0.2_linux_amd64.tar.gz
-chmod +x notify
-cp notify $tools/Tools/bin
-rm notify LICENSE.md README.md notify_0.0.2_linux_amd64.tar.gz
+GO111MODULE=on go get -v github.com/projectdiscovery/notify/cmd/notify
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Notify OK!"
 echo ""
 
 echo ""
-echo -e "\033[1;31m  [-]\033[0m Adicionar /$HOME/$tools/Tools/bin em /etc/environment"
-echo -e "\033[1;31m  [-]\033[0m Adicionar /$HOME/$tools/Tools/pathGO/bin em /etc/environment"
+echo -e "\033[1;31m  [-]\033[0m Adicionar $HOME/$tools/Tools/bin em /etc/environment"
+echo -e "\033[1;31m  [-]\033[0m Adicionar $HOME/$tools/Tools/pathGO/bin em /etc/environment"
+echo ""
+echo -e "\033[1;31m  [-]\033[0m Configurar $HOME/.config/nuclei/config.yaml"
+echo -e "\033[1;31m  [-]\033[0m Configurar $HOME/.config/notify/notify.conf"
 echo ""
 
