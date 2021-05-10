@@ -20,6 +20,8 @@ mkdir $tools/Tools/impacket
 mkdir $tools/Tools/winPEAS
 mkdir $tools/Tools/mimikatz
 mkdir $tools/Tools/nuclei
+mkdir $tools/Tools/pathGO
+mkdir $tools/Tools/pathGOInstall
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Pasta $tools/Tools OK!"
 echo ""
@@ -327,11 +329,22 @@ echo -e "\033[1;32m  [+]\033[0m Baixando golang "
 echo ""
 wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
 tar -vzxf go1.16.4.linux-amd64.tar.gz
-mv go pathGO
-cp -r pathGO/ $tools/Tools
-export PATH=$PATH:$HOME/$tools/Tools/pathGO/bin
+mv go pathGOInstall
+cp -r pathGOInstall/ $tools/Tools
+echo ""
+echo "export PATH=$PATH:$HOME/$tools/Tools/pathGOInstall/bin"
+echo ""
+export PATH=$PATH:$HOME/$tools/Tools/pathGOInstall/bin
+echo ""
+echo "go env -w GOPATH=$HOME/$tools/Tools/pathGO"
+echo ""
 go env -w GOPATH=$HOME/$tools/Tools/pathGO
-rm -rf go1.16.4.linux-amd64.tar.gz pathGO
+echo ""
+echo "go env -w GOROOT=$HOME/$tools/Tools/pathGOInstall"
+echo ""
+go env -w GOROOT=$HOME/$tools/Tools/pathGOInstall
+echo ""
+rm -rf go1.16.4.linux-amd64.tar.gz pathGOInstall
 echo ""
 echo -e "\033[1;32m  [+]\033[0m golang OK!"
 echo ""
@@ -744,6 +757,7 @@ echo ""
 echo ""
 echo -e "\033[1;31m  [-]\033[0m Adicionar $HOME/$tools/Tools/bin em /etc/environment"
 echo -e "\033[1;31m  [-]\033[0m Adicionar $HOME/$tools/Tools/pathGO/bin em /etc/environment"
+echo -e "\033[1;31m  [-]\033[0m Adicionar $HOME/$tools/Tools/pathGOInstall/bin em /etc/environment"
 echo ""
 echo -e "\033[1;31m  [-]\033[0m Configurar $HOME/.config/nuclei/config.yaml"
 echo -e "\033[1;31m  [-]\033[0m Configurar $HOME/.config/notify/notify.conf"
