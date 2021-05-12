@@ -754,6 +754,14 @@ echo -e "\033[1;32m  [+]\033[0m Notify OK!"
 echo ""
 
 echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando Interactsh"
+echo ""
+GO111MODULE=on go get -v github.com/projectdiscovery/interactsh/cmd/interactsh-client
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Interactsh OK!"
+echo ""
+
+echo ""
 echo -e "\033[1;31m  [-]\033[0m Adicionar $HOME/$tools/Tools/bin em /etc/environment"
 echo -e "\033[1;31m  [-]\033[0m Adicionar $HOME/$tools/Tools/pathGO/bin em /etc/environment"
 echo -e "\033[1;31m  [-]\033[0m Adicionar $HOME/$tools/Tools/pathGOInstall/bin em /etc/environment"
