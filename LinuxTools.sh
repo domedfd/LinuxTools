@@ -380,11 +380,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando gobuster v3.1.0"
 echo ""
-wget https://github.com/OJ/gobuster/releases/download/v3.1.0/gobuster-linux-amd64.7z
-7z x gobuster-linux-amd64.7z
-chmod +x gobuster-linux-amd64/gobuster
-cp gobuster-linux-amd64/gobuster $tools/Tools/bin
-rm -rf gobuster-linux-amd64.7z gobuster-linux-amd64
+go install github.com/OJ/gobuster/v3@latest
 echo ""
 echo -e "\033[1;32m  [+]\033[0m GoBuster OK!"
 echo ""
@@ -392,11 +388,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando ffuf"
 echo ""
-wget https://github.com/ffuf/ffuf/releases/download/v1.3.1/ffuf_1.3.1_linux_amd64.tar.gz
-mkdir ffufFolder
-tar -vzxf ffuf_1.3.1_linux_amd64.tar.gz -C ffufFolder
-cp ffufFolder/ffuf $tools/Tools/bin
-rm -rf ffuf_1.3.1_linux_amd64.tar.gz ffufFolder 
+go get -u github.com/ffuf/ffuf
 echo ""
 echo -e "\033[1;32m  [+]\033[0m ffuf OK!"
 echo ""
@@ -724,11 +716,7 @@ echo ""
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Baixando assetfinder "
 echo ""
-wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz
-tar -xvzf assetfinder-linux-amd64-0.1.1.tgz
-chmod +x assetfinder
-cp assetfinder $tools/Tools/bin
-rm assetfinder assetfinder-linux-amd64-0.1.1.tgz
+go get -u github.com/tomnomnom/assetfinder
 echo ""
 echo -e "\033[1;32m  [+]\033[0m assetfinder OK!"
 echo ""
@@ -759,6 +747,14 @@ echo ""
 GO111MODULE=on go get -v github.com/projectdiscovery/interactsh/cmd/interactsh-client
 echo ""
 echo -e "\033[1;32m  [+]\033[0m Interactsh OK!"
+echo ""
+
+echo ""
+echo -e "\033[1;32m  [+]\033[0m Baixando waybackurls"
+echo ""
+go get github.com/tomnomnom/waybackurls
+echo ""
+echo -e "\033[1;32m  [+]\033[0m waybackurls OK!"
 echo ""
 
 echo ""
