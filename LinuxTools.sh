@@ -331,15 +331,15 @@ tar -vzxf go1.16.4.linux-amd64.tar.gz
 mv go pathGOInstall
 cp -r pathGOInstall/ $tools/Tools
 echo ""
-echo "export PATH=$PATH:$HOME/$tools/Tools/pathGOInstall/bin"
+echo "  [+] export PATH=$PATH:$HOME/$tools/Tools/pathGOInstall/bin"
 echo ""
 export PATH=$PATH:$HOME/$tools/Tools/pathGOInstall/bin
 echo ""
-echo "go env -w GOPATH=$HOME/$tools/Tools/pathGO"
+echo "  [+] go env -w GOPATH=$HOME/$tools/Tools/pathGO"
 echo ""
 go env -w GOPATH=$HOME/$tools/Tools/pathGO
 echo ""
-echo "go env -w GOROOT=$HOME/$tools/Tools/pathGOInstall"
+echo "  [+] go env -w GOROOT=$HOME/$tools/Tools/pathGOInstall"
 echo ""
 go env -w GOROOT=$HOME/$tools/Tools/pathGOInstall
 echo ""
